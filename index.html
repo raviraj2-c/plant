@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant selling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Your Plant Nursery</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#plants">Plants</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Your Plant Nursery</h2>
+        <p>Explore a wide variety of beautiful and healthy plants for your home and garden.</p>
+    </section>
+
+        <section id="plants">
+            <h2>Our Plants</h2>
+            <p>Discover our collection of exquisite plants.</p>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="plant.1.jpeg" alt="Plant 1">
+                    <h3>Plant 1</h3>
+                    <p>Description of Plant 1.</p>
+                    <p>$19.99</p>
+                    <button>Add to Cart</button>
+                </div>
+    
+                <div class="product-card">
+                    <img src="plant.2.jpg" alt="Plant 2">
+                    <h3>Plant 2</h3>
+                    <p>Description of Plant 2.</p>
+                    <p>$24.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Add more product cards as needed -->
+            </div>
+        </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Learn about the history and mission of our plant nursery.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <address>
+        <a href = "mailto: ravirajk802@gmail.com"> <img src="download.png">ravirajk802@gmail.com</a> <br/>
+        <a href="tel:+919307143754"> <img src="imgbin-whatsapp-email-web-design-message-icon-whatsapp-transparent-whatsapp-logo-hWVbMN5JZLN184A6eYxreYghy_t.jpg">+91-9307143754</a><br/>
+        <a href="tel:+919307143754"> <img src="contact-us-icon-phone-icon-call-icon-coloring-book-png-clipart-thumbnail.jpg">+91-9307143754</a><br/>
+        <a href="www.linkedin.com/in/raviraj-kumar-a47692295"><img src="facebook-6860914_1280.jpg"> </a><br/>
+        <a href="www.linkedin.com/in/raviraj-kumar-a47692295"><img src="Instagram_logo_2016.svg.jpg"></a>
+        </address>
+        <p>Reach out to us for inquiries and more information.</p>
+        <!-- Add a contact form here -->
+    </section>
+
+    <div id="container" onsubmit="sendEmail(); reset(); return false;">
+        <h2>Plant Nursery</h2>
+        <form id="plantForm">
+          <label for="NAME">Your Name:</label>
+          <input type="text" id="NAME" name="NAME" placeholder="Your Good Name" required>
+    
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+    
+          <label for="plant">Select a Plant:</label>
+          <select id="plant" name="plant">
+            <option value="rose">Rose</option>
+            <option value="lily">Lily</option>
+            <option value="cactus">Cactus</option>
+            <in
+            <!-- Add more plant options as needed -->
+          </select>
+    
+          <input type="button" value="Submit" onclick="send()">
+        </form>
+      </div>
+
+      <footer>
+        <p>&copy; 2023 Your Plant Nursery</p>
+    </footer>
+      <script src="plant,js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+</body>
+</html>
